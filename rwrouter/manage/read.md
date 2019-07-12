@@ -18,13 +18,13 @@
 
 短连接模式：
 
-在短连接模式下，读写分离中间件收到一个业务连接后，只会随机挑选一个从库建立连接。此后对于业务发来的读SQL请求，固定路由到这个从库，如果这个从库异常，则整个业务连接也将断开。
+在短连接模式下，读写分离中间件收到一个业务连接后，会按照用户配置的读请求比例，来挑选从库建立连接。此后对于业务发来的读SQL请求，固定路由到这个从库，如果这个从库异常，则整个业务连接也将断开。
 
-默认情况下，Read-Only是模式关闭的，可以通过uset read\_only\_mode命令，来配置Read-Only模式。
+默认情况下，Read-Only是默认关闭的，可以通过uset read\_only\_mode命令，来配置Read-Only模式。
 
-长连接模式： uset read\\\_only\\\_mode=1；
+长连接模式： uset read\_only\_mode=1；
 
-短连接模式：uset read\\\_only\\\_mode=2;
+短连接模式：uset read\_only\_mode=2;
 
 查看当前Read-Only模式： ushow rwproxy;
 
