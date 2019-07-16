@@ -11,8 +11,7 @@ UDB读写分离中间件提供业务ip访问白名单机制。该机制具备两
 2、业务操作白名单：业务Ip登录后，发起的操作将被中间件进行鉴别。 如果该操作在操作白名单中，则中间件予以通过；否则将被拒绝。
 
 业务ip访问白名单， 和业务操作白名单，均可通过4条自定义SQL进行配置。同时为了减少用户学习成本，
-这4条自定义SQL的语法，和MySQL用户权限管理语句：\`create
-user、grant、revoke、drop user\`高度相似。
+这4条自定义SQL的语法，和MySQL用户权限管理语句：`createuser、grant、revoke、drop user`高度相似。
 
 举例：
 
@@ -36,25 +35,22 @@ all privileges on test.\* to 'robert'@'%'; 注： udb等云数据库， 均不�
 创建成功后， 可以使用该用户名（robert）， 在任意uhost上， 登录读写分离中间件。
 
 1、使用ucreate user命令， 创建ip访问白名单：
-
+```
 ucreate user 'robert'@'10.10.1.%';
-
+```
 该命令执行后， 允许10.10.1.%网段的robert账号登录中间件， 其他ip禁止。 但登录后， 权限只有show databases 和
 show processlist，暂无其他权限。
 
-2、使用ugrant 、urevoke等命令，配置ip操作权限白名单。比如：ugrant select to
-'robert'@'10.10.1.%'; 注： 和标准grant命令不同的是， ugrant省略了 指定授权对象(on .） 这个语法，
+2、使用ugrant 、urevoke等命令，配置ip操作权限白名单。比如：`ugrant select to 'robert'@'10.10.1.%'`; 注： 和标准grant命令不同的是， ugrant省略了 指定授权对象(on .） 这个语法，
 ugrant的授权对象，直接继承自grant 执行该命令， 为 'robert'@'10.10.1.%' 用户开通 select 权限
-如果要为10.10.2.%上的roert账号， 开通除create table之外的其他权限，可以这样做：ugrant all
-privileges to 'robert'@'10.10.2.%' with grant option; urevoke create
-from 'robert'@'10.10.2.%'; 执行该命令， 允许 'robert'@'10.10.2.%' 执行除create
+如果要为10.10.2.%上的roert账号， 开通除create table之外的其他权限，可以这样做：`ugrant all privileges to 'robert'@'10.10.2.%' with grant option;urevoke create from 'robert'@'10.10.2.%'`; 执行该命令， 允许 'robert'@'10.10.2.%' 执行除create
 table、database 之外的所有其他操作； 同时，还支持级联授权，允许'robert'@'10.10.2.%'
 将权限授予其他用户（发起ucreate user 和ugrant命令）。
 
 3、使用udrop命令， 删除访问ip访问控制白名单。如：
-
+```
 udrop user 'robert'@'10.10.1.%';
-
+```
 特别说明： 如果robert用户下的所有ip访问白名单都被删除， 则视为系统没有配置白名单， 此时可以用robert账号从任意uhost上登录。
 
 提供权限配置查询命令：ushow users;
