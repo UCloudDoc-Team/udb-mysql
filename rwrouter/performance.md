@@ -55,35 +55,29 @@ QPS，
 | ProxySQL | 单节点，每个节点配置：8GB内存 / CPU不限                     |
 
 建表语句：
-
-\`\`\` CREATE TABLE \`sbtest1\` (\`id\` int(10) unsigned NOT NULL,\`k\`
-int(10) unsigned NOT NULL DEFAULT '0',\`c\` char(120) NOT NULL DEFAULT
-'',\`pad\` char(60) NOT NULL DEFAULT '',PRIMARY KEY (\`id\`),KEY
-\`k\_1\` (\`k\`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 MAX\_ROWS=1000000
-\`\`\`
-
+```
+CREATE TABLE `sbtest1` (`id` int(10) unsigned NOT NULL,`k` int(10) unsigned NOT NULL DEFAULT '0',`c` char(120) NOT NULL DEFAULT '',`pad` char(60) NOT NULL DEFAULT '',PRIMARY KEY (`id`),KEY `k_1` (`k`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 MAX_ROWS=1000000
+```
 测试命令：
-
-\`\`\` ./src/sysbench --db-driver=mysql \\ --mysql-table-engine=innodb
-\\ --mysql-host=10.9.99.169 --mysql-port=3306 --mysql-user=root
---mysql-password="liuly624@cloud" --mysql-db=sbtest \\
---oltp-tables-count=5 --oltp-table-size=50000000 --report-interval=2
---max-requests=0 --time=300 --threads=128 \\ --rand-init=on
---rand-type=special --rand-spec-pct=5 --percentile=99
---oltp\_auto\_inc=off \\
---test=/data/sysbench/tests/include/oltp\_legacy/select.lua run \`\`\`
-
+```
+./src/sysbench --db-driver=mysql \
+--mysql-table-engine=innodb \
+--mysql-host=10.9.99.169  --mysql-port=3306 --mysql-user=root --mysql-password="liuly624@cloud" --mysql-db=sbtest \
+--oltp-tables-count=5 --oltp-table-size=50000000 --report-interval=2 --max-requests=0 --time=300 --threads=128 \
+--rand-init=on --rand-type=special --rand-spec-pct=5 --percentile=99 --oltp_auto_inc=off \
+--test=/data/sysbench/tests/include/oltp_legacy/select.lua run
+```
 具体的测试步骤是：
 
-1\. 分别采用64、128、192、256线程，直连UDB主节点进行压测，记录QPS；
+1. 分别采用64、128、192、256线程，直连UDB主节点进行压测，记录QPS；
 
-2\. 分别采用64、128、192、256线程，连接读写分离中间件，后端配置1主0从共1个UDB节点进行压测， 记录QPS；
+2. 分别采用64、128、192、256线程，连接读写分离中间件，后端配置1主0从共1个UDB节点进行压测， 记录QPS；
 
-3\. 分别采用64、128、192、256线程，连接读写分离中间件，后端配置1主1从共2个UDB节点进行压测， 记录QPS（注：
+3. 分别采用64、128、192、256线程，连接读写分离中间件，后端配置1主1从共2个UDB节点进行压测， 记录QPS（注：
 主从节点的配置完全一致，下同）；
 
-4\. 分别采用64、128、192、256线程，连接读写分离中间件，后端配置1主2从共3个UDB节点进行压测， 记录QPS。
+4. 分别采用64、128、192、256线程，连接读写分离中间件，后端配置1主2从共3个UDB节点进行压测， 记录QPS。
 
-5\. 分别采用64、128、192、256线程，连接ProxySQL中间件， 后端配置1主2从共3个节点，记录QPS。
+5. 分别采用64、128、192、256线程，连接ProxySQL中间件， 后端配置1主2从共3个节点，记录QPS。
 我们在测试时发现，由于ProxySQL是以SQL语句为粒度进行转发，而且转发目的是以group
 为单位，主从节点不在同一个group。因此虽然后端配置了3个节点，实际利用的是2个从节点。因此，在上面性能测试结果最后一张图中，这次测试只体现ProxySQL后端接2个从节点的性能。
