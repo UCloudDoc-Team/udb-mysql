@@ -10,7 +10,7 @@ sysbench作为一款优秀的MySQL基准测试工具为业界所认可。
 
 ## MySQL不同机型QPS数据
 
-![image](/images/udb-mysql/qps.png)
+![image](/images/qps.png)
 
 ## MySQL不同机型TPS数据
 
