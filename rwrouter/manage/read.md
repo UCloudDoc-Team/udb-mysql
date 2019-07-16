@@ -30,4 +30,4 @@
 
 示例：
 
-![image](/images/RW009.png)
+![image](/images/rw009.png)
