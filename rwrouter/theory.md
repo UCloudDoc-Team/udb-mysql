@@ -51,16 +51,18 @@ Tables产生的锁不会影响到从节点。
 
 2.4 存储过程，以及存储过程后的Select语句， 一律分发到主节点。如：
 
-\`\`\` call udb\_test('000001',@pp,@qq); select @pp,@qq; select \* from
-t1; \`\`\`
+```
+call udb\_test('000001',@pp,@qq); select @pp,@qq; select \* from
+t1;
+```
 
 上述两条 Select 语句，都将被分发到主节点。
 
 2.5 show processlists、Show master/slave status、kill
-query、COM\_PROCESS\_INFO、COM\_STATISTICS命令，目前只会转发到主节点，针对中间件和数据库系统管理场景的，
+query、COM_PROCESS_INFO、COM_STATISTICS命令，目前只会转发到主节点，针对中间件和数据库系统管理场景的，
 更丰富的系统管理命令正在开发中。
 
-2.6 暂不支持COM\\\_TABLE\\\_DUMP和COM\\\_CHANGE\\\_USER协议。
+2.6 暂不支持COM_TABLE_DUMP和COM_CHANGE_USER协议。
 
 ### 3.对Set语句的特别说明
 
