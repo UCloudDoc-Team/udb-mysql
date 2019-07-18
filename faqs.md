@@ -114,9 +114,9 @@ flush privileges;
 **命令行操作**
 
 查看云数据库运行状况：
-
+```
     show status
-
+```
 查看InnoDB引擎运行状况：
 
 ``` 
@@ -147,28 +147,28 @@ MySQL实例允许用户导入自定义配置文件对云数据库的相关参数
 
 MySQL实例支持安装插件和卸载插件的功能，目前仅开放handlersocket。
 
-\*\*命令行操作 \*\*
+**命令行操作 **
 
 执行以下语句安装插件：
-
+```
     install plugin handlersocket soname 'handlersocket.so';
-
+```
 查看当前已安装的插件列表：
-
+```
     show plugins;
-
+```
 卸载插件：
-
+```
     uninstall plugin handlersocket;
-
+```
 ## 如何使用MySQL-Proxy使MySQL实例可以通过外网访问？
 
 鉴于MySQL实例不能通过外网IP直接访问，可使用MySQL-Proxy将MySQL实例跳转至云主机（UHost）的端口进行访问。
 
 在云主机（UHost）安装MySQL-Proxy：
-
+```
     yum install mysql-proxy
-
+```
 安装结束后，可通过如下命令查看相关信息：
 
 ``` 
@@ -176,19 +176,19 @@ mysql-proxy -V
 ```
 
 查看MySQL-Proxy帮助选项：
-
+```
     mysql-proxy -help -all
-
+```
 MySQL-Proxy默认端口为4040，通过访问4040端口就可以访问3306端口。
 
 使用命令行开启MySQL-Proxy，步骤如下：
-
+```
     touch /etc/mysql-proxy.cnf
     
     vim /etc/mysql-proxy.cnf
-
+```
 输入如下内容：
-
+```
     [mysql-proxy]
     
     admin-username=root    #admin用户名
@@ -206,21 +206,21 @@ MySQL-Proxy默认端口为4040，通过访问4040端口就可以访问3306端口
     log-file=/var/log/mysql-proxy.log
     
     log-level=debug
-
+```
 配置文件保存后需要改变权限：
-
+```
     chmod 0660 /etc/mysql-proxy.cnf
-
+```
 启动：
-
+```
     mysql-proxy --defaults-file=/etc/mysql-proxy.cnf
-
+```
 使用kill命令可以将程序终止。
 
 在外网环境测试：
-
+```
     mysql -h$uhost_ip -P4040 -u$User -p$Password
-
+```
 $uhost\_ip为UHost的外网IP。
 
 注意：
@@ -238,9 +238,9 @@ $uhost\_ip为UHost的外网IP。
 可以。以下以部分语句作为举例：
 
 查看当前连接状态：
-
+```
     show full processlist
-
+```
 查看从库同步状态：
 
 ``` 
@@ -248,13 +248,13 @@ show slave status \G
 ```
 
 查看InnoDB状态：
-
+```
     show engine innodb status\G
-
+```
 查看当前参数设置，如wait\_timeout：
-
+```
     show global variables like '%wait_timeout%';
-
+```
 ## 在phpMyAdmin上操作DROP数据库为什么被禁止？
 
 由于phpMyAdmin的保护机制，DROP语句是被禁用的。如果需要在phpMyAdmin删除整个库，需要按如下步骤操作：
@@ -284,55 +284,55 @@ mysqldump -hxxx -uxxx --quick --routines --master-data=2 --single-transaction --
 ```
 
 对于使用MyISAM存储引擎库表使用：
-
+```
     mysqldump -hxxx -uxxx --master-data=2 -l --databases db1 db2 db3 > data.sql
-
+```
 2、导入数据：
-
+```
     mysql -hxxx -uxxx -p < data.sql
-
+```
 3、设置同步。
 
 第一步：从库配置文件修改（my.cnf）在\[mysqld\]下增加参数server-id=1（值与主库不一样即可）
 
 执行以下命令，使修改生效。
-
+```
     service mysqld reload
-
+```
 第二步：
 
 登陆到主库中授权，执行：
-
+```
     grant replication slave on *.* to username@”x.x.x.x” identified by “xxxx”;
     
     flush privileges;
-
+```
 第三步：
 
 在data.sql中找到change master to，如：
-
+```
     CHANGE MASTER TO MASTER_LOG_FILE='mysql-bin.000026',MASTER_LOG_POS=33268716;
-
+```
 将此语句复制后，登录从库，并补齐为如下命令 :
-
+```
     CHANGE MASTER TO MASTER_LOG_FILE='mysql-bin.xxx',MASTER_LOG_POS=xxx,MASTER_HOST='X.X.X.X',
     
     MASTER_PORT=XXX,MASTER_USER='XXX',MASTER_PASSWORD='xxx';
-
+```
 PORT默认3306时可以不要指定，然后执行slave start。
 
 查看主从是否建立成功，可以使用：
-
+```
     show slave status\G;
-
+```
 ## 在云主机上使用wget下载云数据库的Log时报错，如何解决？
 
 在云主机上下载云数据库的Log备份时需要在url前后加上双引号。
 
 例：下载地址为：<http://udbbackup.ufile.ucloud.cn/udb-3u022a/>
-
+```
     wget -O ppp.tgz "http://udbbackup.ufile.ucloud.cn/udb-3u022a/"
-
+```
 \-O 设置本地名称
 
 ## 如何正确设置字符集？
@@ -353,7 +353,7 @@ utf8来保证character\_set\_client，character\_set\_connection和character\_se
 ## 如何查询MySQL实例的客户端和服务器端版本
 
 登陆MySQL，执行命令s，首行显示客户端版本，Server version显示服务器端版本。
-
+```
     mysql> s
     
     ./mysql Ver 14.14 Distrib 5.6.20-ucloudrel1, for Linux (x86_64) using EditLine wrapper
@@ -389,7 +389,7 @@ utf8来保证character\_set\_client，character\_set\_connection和character\_se
     TCP port: 3370
     
     Uptime: 3 days 8 hours 42 min 18 sec
-
+```
 ## MySQL数据库主从同步延迟是如何产生的？
 
 数据库的主从不一致的情况如下:
@@ -398,11 +398,11 @@ utf8来保证character\_set\_client，character\_set\_connection和character\_se
 
 主从两台机器的负载不一致:由于mysql主从复制是主上面启动1个io线程，而从上面启动1个sql线程和1个io线程，当中任何一台机器的负载很高可能会导致其中的任何一个线程出现资源不足，出现主从不一致的情况。
 
-max\_allowed\_packet设置不一致：主上面设置的max\_allowed\_packet比从大，当大的sql语句能在主上面执行完毕，从上面设置过小，无法执行，导致的主从不一致。
+max_allowed_packet设置不一致：主上面设置的max_allowed_packet比从大，当大的sql语句能在主上面执行完毕，从上面设置过小，无法执行，导致的主从不一致。
 
 key自增键：开始的键值跟自增步长设置不一致引起的主从不一致。
 
-mysql异常宕机：如果未设置sync\\\_binlog=1(默认为0:执行的语句向二进制日志一次不同步到硬盘,性能最好,宕机丢数据多;1:每写一次二进制日志都要与硬盘同步,性能最差,宕机丢数据少)或者innodb\\\_flush\\\_log\\\_at\\\_trx\\\_commit=1(默认为1:每一次事务提交都需要把日志刷新到硬盘,性能差,丢数据少;2:写入缓存,日志每隔一秒刷新到硬盘,性能好,丢数据多)很有可能出现binlog或者relaylog文件出现损坏,导致主从不一致;
+mysql异常宕机：如果未设置sync_binlog=1(默认为0:执行的语句向二进制日志一次不同步到硬盘,性能最好,宕机丢数据多;1:每写一次二进制日志都要与硬盘同步,性能最差,宕机丢数据少)或者innodb_flush_log_at_trx_commit=1(默认为1:每一次事务提交都需要把日志刷新到硬盘,性能差,丢数据少;2:写入缓存,日志每隔一秒刷新到硬盘,性能好,丢数据多)很有可能出现binlog或者relaylog文件出现损坏,导致主从不一致;
 
 mysql本身的bug引起的主从不同步;
 
@@ -468,11 +468,11 @@ OOM原因：当内存使用超过UDB申请内存时，会按OS的一个规则评
 
 步骤三、待原db状态为WaitForSwitch时，调用SwitchUDBInstanceToHA,该api将原普通db的ip切换到高可用上，同时重新生成高可用订单并删除原普通db订单;如果接口返回失败，则联系技术支持；接口返回后刷新控制台，如果原db的实例类型变为高可用版，ip及实例名称都未变且状态为运行中，则升级成功，否则联系技术支持
 
-\#\# 高可用UDB的sync\_binlog参数可否修改？
+## 高可用UDB的sync\_binlog参数可否修改？
 
 高可用UDB的sync\_binlog参数默认为1，表示每个事务完成后，调用fsync使得binlog落盘，这样可以保证数据不丢失，建议不要修改！
 
-\#\# DB系统总内存、内存使用率、内存大小、DB系统总缓存这几个监控项的含义？
+## DB系统总内存、内存使用率、内存大小、DB系统总缓存这几个监控项的含义？
 
 DB系统指的是DB服务进程（mysqld、mongod等）以及对该DB实例进行日常维护的进程（比如备份）的集合
 
@@ -484,15 +484,15 @@ DB系统总缓存：DB系统内的所有进程的IO所消耗的缓存之和
 
 内存使用率：内存大小占用户所购买内存的大小的百分比
 
-\#\# 高可用UDB存储引擎如何选择？
+## 高可用UDB存储引擎如何选择？
 
 建议高可用UDB使用innodb引擎，如果使用非事务引擎myisam表，可能会造成高可用主从同步异常，从而导致高可用容灾失效。
 
-\#\# UDB实例删除之后备份会被删除么？
+## UDB实例删除之后备份会被删除么？
 
 UDB实例删除之后，备份（包括自动备份和手动备份）会保留7天，7天之后自动回收。
 
-\#\# UDB备份机制
+## UDB备份机制
 
 1、每天固定时间段自动备份（通常是0-6点，具体时间段见实例的备份页面），最多保留最近3次手动备份；
 
@@ -502,10 +502,10 @@ UDB实例删除之后，备份（包括自动备份和手动备份）会保留7�
 
 4、备份策略可自定义，例如是否使用从从库备份、定义备份时间段、定义是否每天备份等等，具体见实例的备份页面。
 
-\#\# 云数据库监控项中取值为0,1的意义是？
+##  云数据库监控项中取值为0,1的意义是？
 
 数值0：表示对应监控项正常无需关注，数值1：表示对应监控项出现异常需要关注。
 
-\#\# 数据库实例CPU核数？
+##  数据库实例CPU核数？
 
 UDB数据库提供内存、硬盘等配置供用户选择，单个数据库实例默认核数（C）与内存（G）比为1:4，核数向上取整。
