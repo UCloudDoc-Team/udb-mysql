@@ -2,7 +2,7 @@
 
 {{indexmenu_n>3}}
 
-1、登录控制台，进入UDB产品页面，点击“CloudDBA”到达CloudDBA产品介绍页面，点击“立即体验”跳转至Grafana登录页面，用户首次登录的用户名为：admin，密码为admin。登录后用户可以修改用户名及密码。
+1、登录控制台，进入UDB产品页面，点击“CloudDBA”到达CloudDBA产品介绍页面，点击“立即体验”跳转至Grafana登录页面，用户首次登录的用户名为：admin，密码为admin。登录后用户可以修改密码。
 
 控制台产品入口：
 ![image](/images/clouddba00.png)
@@ -10,7 +10,7 @@
 输入名称及密码登录：
 ![image](/images/clouddba01.png)
 
-修改名称及密码（也可以跳过此步骤）：
+修改密码（也可以跳过此步骤）：
 ![image](/images/clouddba02.png)
 
 2、登录后达到Grafana主页面，可以对UDB实例监控进行管理，我们默认提供了MySQL大盘，MySQL实例监控、MongoDB大盘及MongoDB实例监控；目前支持UDB-MySQL产品和UDB-MongoDB产品的监控管理。
