@@ -3,4 +3,4 @@
 
 {{indexmenu_n>6}}
 
-{{indexmenu>:database:udb-mysql:rwrouter#2 | nsort dsort msort}}
+{{indexmenu>:database:udb-mysql:clouddba#2 | nsort dsort msort}}
