@@ -35,8 +35,18 @@ route_dest：路由目的地，取值有all、master、slave以及udb_id，其�
 \*	SQL模板的结构，和实际SQL语句的结构，必须完全一致。假如SQL模板为：select money from t_account where uid=? and name=?则业务发起SQL， 必须保证where查询条件中的uid在前， name在后。 否则中间件会认为结构和SQL模板不一样的SQL
 
 样例：
-
-uinsert sql_route("select * from t where id=?" : "master");  作用：  指定sql语句路由到 master节点  uinsert sql_route("call proc1" : "all"); 作用：  指定将某种类型的call存储过程语句， 路由到 all/master/slave 节点  uinsert sql_route("call proc1" : "udbha-123qwe"); 作用： 指定路由到udb节点
+```
+uinsert sql_route("select * from t where id=?" : "master");  
+```
+作用：  指定sql语句路由到 master节点  
+```
+uinsert sql_route("call proc1" : "all"); 
+```
+作用：  指定将某种类型的call存储过程语句， 路由到 all/master/slave 节点  
+```
+uinsert sql_route("call proc1" : "udbha-123qwe"); 
+```
+作用： 指定路由到udb节点
 
 
 2. 查询路由规则：
