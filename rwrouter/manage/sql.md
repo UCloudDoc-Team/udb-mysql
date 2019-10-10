@@ -20,19 +20,19 @@ sql_stmt: 即sql模板，常量替换成?后的sql语句； 比如： select * f
 
 route_dest：路由目的地，取值有all、master、slave以及udb_id，其中
 
-\*	all：路由到全部节点，路由比例由控制台上的 读模式 来控制
+##### \* #####  	all：路由到全部节点，路由比例由控制台上的 读模式 来控制
 
-\*	master: 只路由到主节点
+\*  	master: 只路由到主节点
 
-\*	slave: 只路由到从节点。 路由比例，由控制台上的 读模式 来控制（去除主节点的比例
+\*  	slave: 只路由到从节点。 路由比例，由控制台上的 读模式 来控制（去除主节点的比例
 
-\*	udb_id：:路由到指定udb上
+\*  	udb_id：:路由到指定udb上
 
 特别说明： 
 
-\*	sql_stmt 与route_dest" 之间的字符为 ':' 号 而不是 ',' 号。
+\*  	sql_stmt 与route_dest" 之间的字符为 ':' 号 而不是 ',' 号。
 
-\*	SQL模板的结构，和实际SQL语句的结构，必须完全一致。假如SQL模板为：select money from t_account where uid=? and name=?则业务发起SQL， 必须保证where查询条件中的uid在前， name在后。 否则中间件会认为结构和SQL模板不一样的SQL
+\*  	SQL模板的结构，和实际SQL语句的结构，必须完全一致。假如SQL模板为：select money from t_account where uid=? and name=?则业务发起SQL， 必须保证where查询条件中的uid在前， name在后。 否则中间件会认为结构和SQL模板不一样的SQL
 
 样例：
 ```
