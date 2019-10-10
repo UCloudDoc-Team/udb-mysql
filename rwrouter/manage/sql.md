@@ -76,7 +76,7 @@ udelete sql_route("rule_id": "id");
 ```
 参数说明：
 
-id:  路由规则id，即ushow all_sql_route命令返回的rule_id值
+id:  路由规则id，即ushow all\_sql\_route命令返回的rule_id值
 
 样例：
 ```
