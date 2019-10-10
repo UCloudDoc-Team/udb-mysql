@@ -18,7 +18,7 @@ uinsert sql_route("sql_stmt" :  "route_dest")
 
 sql_stmt: 即sql模板，常量替换成?后的sql语句； 比如： select * from t where id=?  / call proc1等。 其中，proc1为存储过程的名字。
 
-route_dest：路由目的地，取值有all、master、slave以及udb_id，其中
+route\_dest：路由目的地，取值有all、master、slave以及udb\_id，其中
 
 all：路由到全部节点，路由比例由控制台上的 读模式 来控制
 
@@ -30,7 +30,7 @@ udb_id：:路由到指定udb上
 
 特别说明： 
 
-1) sql_stmt 与route_dest" 之间的字符为 ':' 号 而不是 ',' 号。
+1) sql\_stmt 与route\_dest" 之间的字符为 ':' 号 而不是 ',' 号。
 
 2) SQL模板的结构，和实际SQL语句的结构，必须完全一致。假如SQL模板为：select money from t_account where uid=? and name=?则业务发起SQL， 必须保证where查询条件中的uid在前， name在后。 否则中间件会认为结构和SQL模板不一样的SQL
 
@@ -47,7 +47,6 @@ uinsert sql_route("call proc1" : "all");
 uinsert sql_route("call proc1" : "udbha-123qwe"); 
 ```
 作用： 指定路由到udb节点
-
 
 2. 查询路由规则：
 
@@ -68,7 +67,6 @@ sql_stmt: sql模板
 sql_md5: sql模板MD5加密产生的字符串
 
 route_dest: 路由目的地
-
 
 3. 删除路由规则：
 
