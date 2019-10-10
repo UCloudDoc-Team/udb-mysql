@@ -88,12 +88,3 @@ udelete sql_route("rule_id":"1");
 该语句将被路由到某个节点
 
 注意：注释必须为： /\* \*/， #和–类型的SQL不具备该功能。
-
-如果要删除某一条SQL路由规则，可采用以下自定义SQL：
-```
-udelete sql_route ('select money from t_account where uid=?');
-```
-查看中间件中全部路由规则，可以采用以下自定义SQL：
-```
-ushow all_sql_route;
-```
