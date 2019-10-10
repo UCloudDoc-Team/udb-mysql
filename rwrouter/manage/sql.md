@@ -20,7 +20,7 @@ sql_stmt: 即sql模板，常量替换成?后的sql语句； 比如： select * f
 
 route_dest：路由目的地，取值有all、master、slave以及udb_id，其中
 
-##### \* #####  	all：路由到全部节点，路由比例由控制台上的 读模式 来控制
+\*  	all：路由到全部节点，路由比例由控制台上的 读模式 来控制
 
 \*  	master: 只路由到主节点
 
