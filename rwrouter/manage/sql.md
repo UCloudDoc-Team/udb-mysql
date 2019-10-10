@@ -30,9 +30,9 @@ route\_dest：路由目的地，取值有all、master、slave以及udb\_id，其
 
 特别说明： 
 
-1) sql\_stmt 与route\_dest" 之间的字符为 ':' 号 而不是 ',' 号。
+- sql\_stmt 与route\_dest" 之间的字符为 ':' 号 而不是 ',' 号。
 
-2) SQL模板的结构，和实际SQL语句的结构，必须完全一致。假如SQL模板为：select money from t_account where uid=? and name=?则业务发起SQL， 必须保证where查询条件中的uid在前， name在后。 否则中间件会认为结构和SQL模板不一样的SQL
+- SQL模板的结构，和实际SQL语句的结构，必须完全一致。假如SQL模板为：select money from t_account where uid=? and name=?则业务发起SQL， 必须保证where查询条件中的uid在前， name在后。 否则中间件会认为结构和SQL模板不一样的SQL
 
 样例：
 ```
