@@ -1,6 +1,6 @@
 # 快速上手
 
-{{indexmenu_n>3}}
+
 
 1、登录控制台，进入UDB产品页面，点击“CloudDBA”到达CloudDBA产品介绍页面，点击“立即体验”跳转至Grafana登录页面，用户首次登录的用户名为：admin，密码为admin。登录后用户可以修改密码。
 

@@ -1,6 +1,6 @@
 # FAQs
 
-{{indexmenu_n>70}}
+
 
 ## 如何访问MySQL实例？
 

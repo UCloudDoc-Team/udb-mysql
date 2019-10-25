@@ -1,4 +1,4 @@
-{{indexmenu_n>1}}
+
 
 ## 创建MySQL实例
 
