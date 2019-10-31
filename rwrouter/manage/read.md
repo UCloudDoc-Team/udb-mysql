@@ -26,7 +26,7 @@
 
 短连接模式：uset read\_only\_mode=2;
 
-查看当前Read-Only模式： ushow rwproxy;
+查看当前Read-Only模式： ushow rw_proxy;
 
 示例：
 
