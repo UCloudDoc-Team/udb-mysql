@@ -1,4 +1,4 @@
-# 什么是云数据库MySQL？
+# 什么是云数据库？
 
 云数据库MySQL是基于成熟云计算技术的高可用、高性能的数据库服务，完全兼容MySQL 5.1、MySQL 5.5、MySQL 5.6、MySQL 5.7、Percona 5.5、Percona 5.6和Percona 5.7协议。
 
