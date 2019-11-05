@@ -1,7 +1,8 @@
 * 云数据库 MySQL
     * [概览](database/udb-mysql/overview)
     * 产品简介
-        * [主要概念](database/udb-mysql/product/concepts)
+        * [什么是云数据库？](database/udb-mysql/product/concepts)
+        * [主要概念](database/udb-mysql/product/Terminology)
         * [产品优势](database/udb-mysql/product/superiority)
         * [机型版本](database/udb-mysql/product/version)
     * 快速上手
