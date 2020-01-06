@@ -30,6 +30,7 @@
     * [产品简介](database/udb-mysql/clouddba/product)
     * [产品优势](database/udb-mysql/clouddba/superiority)
     * [快速上手](database/udb-mysql/clouddba/quick)
+    * [如何修改仪表盘](database/udb-mysql/clouddba/guide)
 * [基准测试](database/udb-mysql/test)
 * [产品价格](database/udb-mysql/price)
 * [FAQs](database/udb-mysql/faqs)
