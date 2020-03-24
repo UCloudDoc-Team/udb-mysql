@@ -82,5 +82,5 @@ MySQL、Percona默认端口为3306。
 ## 云数据库 UDB 服务等级协议（SLA）
 
 UCloud UDB服务等级协议规定了UCloud向客户提供UCloud
-UDB云数据库服务的一般性服务等级指标和服务注意事项。协议详情请点击[云数据库 UDB 服务等级协议（SLA）](/policy/sla/udb_sla)查看。
+UDB云数据库服务的一般性服务等级指标和服务注意事项。协议详情请点击[云数据库 UDB 服务等级协议（SLA）](sla/udb_sla)查看。
 

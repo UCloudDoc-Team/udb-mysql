@@ -1,6 +1,6 @@
-<div class="sidebar_title icon__udb"> 云数据库 MySQL</div>
+# 概览
 
-* [概览](/udb-mysql/README)
+
 * 产品简介
     * [什么是云数据库](/udb-mysql/product/concepts)
     * [主要概念](/udb-mysql/product/Terminology)
