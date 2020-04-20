@@ -6,3 +6,28 @@
 |   | 内核调优，提升性能 | 开源版无性能优化 | 开源版无性能优化 |
 |   | 备份空间免费 | 备份空间独立收费 | 需要独立准备备份资源，成本极高 |
 
+<table>
+    <tr>
+        <td>对比项</td>
+        <td>UDB-MySQL</td>
+        <td>UHost自建</td>
+        <td>自建数据库</td>
+    </tr>
+    <tr>
+        <td rowspan="3">性价比</td>
+        <td>弹性资源</td>
+    </tr>
+    <tr>
+        <td>内核调优，提升性能</td>
+    </tr>
+    <tr>
+        <td>备份空间免费</td>
+    </tr>
+    <tr>
+        <td rowspan="2">姓氏</td>
+        <td>张</td>
+    </tr>
+    <tr>
+        <td>王</td>
+    </tr>
+</table>
