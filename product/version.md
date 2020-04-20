@@ -21,8 +21,8 @@ NVMe机型的数据库实例，基于分布式存储架构的弹性块存储设�
 
 ### MySQL产品版本
 
-云数据库MySQL，支持MySQL5.1/5.5/5.6/5.7和Percona5.5/5.6/5.7协议。
+高可用版SSD机型MySQL，支持MySQL5.5/5.6/5.7和Percona5.5/5.6/5.7协议。
 
-MySQL高可用版，支持MySQL5.5/5.6/5.7和Percona5.5/5.6/5.7协议。
+高可用版SSD机型MySQL+Slave从库架构，支持MySQL5.6/5.7和Percona5.6/5.7协议。
 
-MySQL高可用版+Slave从库架构，支持MySQL5.6/5.7和Percona5.6/5.7协议。
+普通版NVMe机型MySQL，支持MySQL5.6/5.7协议。
