@@ -30,10 +30,19 @@
         <td>需要独立准备备份资源，成本极高</td>
     </tr>
     <tr>
-        <td rowspan="2">姓氏</td>
-        <td>张</td>
+        <td rowspan="3">可用性</td>
+        <td>高可用版提供双主热备架构，实现20秒左右故障恢复</td>
+         <td>张</td>
+         <td>张</td>
     </tr>
     <tr>
         <td>王</td>
+        <td>张</td>
+        <td>张</td>
+    </tr>
+     <tr>
+        <td>王</td>
+        <td>张</td>
+        <td>张</td>
     </tr>
 </table>
