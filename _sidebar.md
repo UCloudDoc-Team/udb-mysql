@@ -7,6 +7,7 @@
     * [产品优势](/udb-mysql/product/superiority)
     * [机型版本](/udb-mysql/product/version)
     * [产品架构](/udb-mysql/product/architecture)
+    * [与自建数据库对比](/udb-mysql/product/difference)
 * 快速上手
     * [创建MySQL实例](/udb-mysql/quick/create)
     * [登录访问](/udb-mysql/quick/login)
