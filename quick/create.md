@@ -18,11 +18,11 @@
 
 3.2）按需设置网络、实例名称、端口号，管理员用户名和管理员密码。MySQL默认端口号为3306，管理员用户名默认为root。为了数据安全，管理员密码需要一定的复杂度。
 
-![image](/images/mysql-v4-004.png)
+![image](/images/create01.png)
 
 3.3）数据库计费，在右侧面板选择计费方式与计费周期，并点击“立即购买”。
 
-![image](/images/mysql-v4-005.png)
+![image](/images/create02.png)
 
 4、最后确认各项选择以及金额，确认支付。
 
