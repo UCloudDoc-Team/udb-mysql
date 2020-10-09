@@ -30,25 +30,25 @@
 
 参数列表：
 
-![image](/images/config009001.png)
+![image](/images/config1009001.png)
 
 默认配置文件支持下载到本地和另存为可自定义参数值的用户配置文件；用户配置文件除下载和另存为功能外，支持当前配置文件参数值修改，并根据修改参数情况去重启已应用该配置文件的UDB实例。
 
 应用实例：
 
-![image](/images/config009002.png)
+![image](/images/config1009002.png)
 
 ## 编辑配置文件
 
 在配置文件列表中选择自定义配置文件，在“操作”中点击“详情”可以查看其当前的所有参数项并可以进行编辑及保存修改。
 
-![image](/images/config009003.png)
+![image](/images/config1009003.png)
 
-![image](/images/config009004.png)
+![image](/images/config1009004.png)
 
 dynamic类型参数修改后自动更新生效，static类型参数修改后需重启实例生效；如果完成对static类型修改参数值后，可在应用实例中选定需要生效的实例进行重启或启动操作：
 
-![image](/images/config009002.png)
+![image](/images/config1009002.png)
 
 注意：
 
