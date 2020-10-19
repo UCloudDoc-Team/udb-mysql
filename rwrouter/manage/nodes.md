@@ -6,6 +6,7 @@
 ushow mw_nodes;
 ```
 
+![image](/images/rwnodes20201019.png)
 
 其中：
 
