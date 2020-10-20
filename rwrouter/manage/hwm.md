@@ -1,13 +1,17 @@
 ## 限流方案
 
+UDB读写分离中间件支持SQL限流功能。可以通过SQL限流来控制数据库请求访问量和SQL并发量，保障服务的可用性。读写分离的限流有两种：
 
-#### 1、活跃链接限流
+#### 1、高水位限流
 
-为读写分离中间件设置活跃链接的上限，当并发超过此值是，拒绝执行sql，保护MySQL，我们将这个称之为高水位限流，这样就给数据库加上了一层限流的功能，使得数据库不被瞬间的高爆发请求打爆。
+为读写分离中间件设置活跃链接的上限，当并发超过此值时，拒绝执行sql，保护MySQL，称之为高水位限流，这样就给数据库加上了一层限流的功能，使得数据库不被瞬间的高爆发请求打爆。
 
-活跃session限流命令：
+高水位限流命令：
+
 
 a、uset active_sess_hwm =XXX，设置读写分离中间件限流高水位，取值范围0~100000,其中0默认不限流，该参数对应t_rwproxy_instance表中新增字段active_sess_hwm
+
+
 
 b、uset active_sess_ctl_mode="all[|select|insert|update|delete]", 限流的sql类型，多个取值组合：[all|select|insert|update|delete]，默认select，设置为all需谨慎。该参数对应t_rwproxy_instance表中新增字段active_sess_ctl_mode
 
