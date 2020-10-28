@@ -10,34 +10,34 @@ UCloud云数据库UDB产品支持按年、按月、按时计费方式，云数�
 <!-- udocs:price -->
 | 地域 | 可用区 | 类型 | 机型 | 内存（GB） |  按时价（元/小时） | 按月价（元/月）| 按年价（元/年）| 操作 |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 2 |  0.375  | 180 | 1800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 4 |  0.75  | 360 | 3600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 8 |  1.5  | 720 | 7200 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 12 |  2.25  | 1080 | 10800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 16 |  3.00  | 1440 | 14400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 24 |  4.50  | 2160 | 21600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 32 |  6.00  | 2880 | 28800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 48 |  9.00  | 4320 | 43200 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 64 |  12.00  | 5760 | 57600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 96 |  18.00  | 8640 | 86400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 128 |  24.00  | 11520 | 115200 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 192 |  36.00  | 17280 | 172800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 256 |  48.00  | 23040 | 230400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 北京二 | 可用区B | 高可用版 | NVMe机型| 320 |  60.00  | 28800 | 288000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 2 |  0.375  | 180 | 1800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 4 |  0.75  | 360 | 3600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 8 |  1.5  | 720 | 7200 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 12 |  2.25  | 1080 | 10800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 16 |  3.00  | 1440 | 14400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 24 |  4.50  | 2160 | 21600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 32 |  6.00  | 2880 | 28800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 48 |  9.00  | 4320 | 43200 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 64 |  12.00  | 5760 | 57600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 96 |  18.00  | 8640 | 86400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 128 |  24.00  | 11520 | 115200 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 192 |  36.00  | 17280 | 172800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 256 |  48.00  | 23040 | 230400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
-| 胡志明 | 可用区A | 高可用版 | NVMe机型| 320 |  60.00  | 28800 | 288000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 2 |  0.4  | 180 | 1800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 4 |  0.8  | 360 | 3600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 8 |  1.6  | 640 | 6400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 12 |  2.4  | 960 | 9600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 16 |  3.2  | 1280 | 12800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 24 |  4.8  | 1920 | 19200 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 32 |  6.4  | 2560 | 25600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 48 |  9.6  | 3840 | 38400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 64 |  12.8  | 5120 | 51200 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 96 |  19.2  | 7680 | 76800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 128 |  25.6  | 10240 | 102400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 192 |  38.4  | 15360 | 152600 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 256 |  51.2  | 20480 | 204800 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 320 |  64.0  | 25600 | 256000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 2 |  0.4  | 220 | 2200 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 4 |  0.8  | 440 | 4400 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 8 |  1.6  | 800 | 8000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 12 |  2.4  | 1200 | 12000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 16 |  3.2  | 1600 | 16000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 24 |  4.8  | 2400 | 24000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 32 |  6.4  | 3200 | 32000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 48 |  9.6  | 4800 | 48000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 64 |  12.8  | 6400 | 64000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 96 |  19.2  | 9600 | 96000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 128 |  25.6  | 12800 | 128000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 192 |  38.4  | 19200 | 192000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 256 |  51.2  | 25600 | 256000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
+| 胡志明 | 可用区A | 高可用版 | NVMe机型| 320 |  64.0  | 32000 | 320000 | [立即购买](https://console.ucloud.cn/udb/mysql/create) |
 
 ### 硬盘价格
 
