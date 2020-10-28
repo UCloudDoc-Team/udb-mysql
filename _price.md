@@ -1,22 +1,16 @@
 # 产品价格
 
 ## 定价规则
-请概述下当前产品所包含的几种计费方式，并给出通俗易懂的解释，便于客户快速理解
-
-
-## 最新活动价
-<!-- udocs:active -->
-| 活动名称 | 详情 |
-| :---- | :---- |
-| 快杰云主机1，降成本神器 | [了解详情](https://www.ucloud.cn/site/active/1111.html) |
-| 快杰云主机2，降成本神器 | [了解详情](https://www.ucloud.cn/site/active/1111.html) |
-| 快杰云主机3，降成本神器 | [了解详情](https://www.ucloud.cn/site/active/1111.html) |
-| 快杰云主机4，降成本神器 | [了解详情](https://www.ucloud.cn/site/active/1111.html) |
-
+UCloud云数据库UDB产品支持按年、按月、按时计费方式，云数据库实例包含内存和硬盘两部分费用。
 
 ## 产品价格
+
+### 内存价格
+
 <!-- udocs:price -->
-| 地域 | 可用区 | 机型 | 镜像 | CPU（核） |  时活动价（元/小时） | 月活动价（元/月）| 年活动价（元/年）| 操作 |
+| 地域 | 可用区 | 类型 | 机型 | 内存（GB） |  按时价（元/小时） | 按月价（元/月）| 按年价（元/年）| 操作 |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| 北京二 | 可用区B | 快杰型 O | windows | 4 |  100  | 500 | 2000 | [立即购买](https://www.ucloud.cn/site/active/1111.html) |
-| 上海二 | 可用区A | 通用型 N | windows | 4 |  100  | 500 | 2000 | [立即购买](https://www.ucloud.cn/site/active/此处可以写参数.html) |
+| 北京二 | 可用区B | 高可用版 | NVMe机型| 2 |  0.375  | 180 | 1800 | [立即购买](https://www.ucloud.cn/site/active/1111.html) |
+| 上海二 | 可用区A | 普通版 | windows | 4 |  100  | 500 | 2000 | [立即购买](https://www.ucloud.cn/site/active/此处可以写参数.html) |
+
+
