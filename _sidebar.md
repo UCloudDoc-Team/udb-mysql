@@ -1,4 +1,3 @@
-<div class="sidebar_title icon__udb"> 云数据库 MySQL</div>
 
 * [概览](/udb-mysql/README)
 * 产品简介
