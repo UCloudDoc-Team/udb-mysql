@@ -6,9 +6,9 @@
 
 在UCloud控制台， 创建好UDB主从节点之后， 点击详情到达管理二级页面，即可看到读写分离：
 
-![image](/images/rw001.png)
+![image](/images/rw1225001.png)
 
-![image](/images/rw002.png)
+![image](/images/rw1225002.png)
 
 在读写分离页面点击开启读写分离：
 
