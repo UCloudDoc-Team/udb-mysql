@@ -1,7 +1,7 @@
 # 概览
 
 * 产品简介
-    * [什么是云数据库。](/udb-mysql/product/concepts)
+    * [什么是云数据库](/udb-mysql/product/concepts)
     * [主要概念](/udb-mysql/product/Terminology)
     * [产品优势](/udb-mysql/product/superiority)
     * [机型版本](/udb-mysql/product/version)
