@@ -25,6 +25,6 @@ NVMe机型的数据库实例，采用业内主流的计算存储分离架构：�
 
 高可用版SSD机型MySQL+Slave从库架构，支持MySQL5.6/5.7和Percona5.6/5.7协议。
 
-高可用/普通版NVMe机型MySQL，支持MySQL5.6/5.7协议。
+高可用/普通版NVMe机型MySQL，支持MySQL5.6/5.7和Percona5.6/5.7协议。
 
-高可用/普通版NVMe机型MySQL+Slave从库架构，支持MySQL5.6/5.7协议。
+高可用/普通版NVMe机型MySQL+Slave从库架构，支持MySQL5.6/5.7和Percona5.6/5.7协议。
