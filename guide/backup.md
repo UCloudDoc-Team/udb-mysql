@@ -63,9 +63,17 @@ MySQL实例支持手动备份，用户可以保存某些关键时间点的重要
 ![image](/images/mysqlbackup1.png)
 
 ![image](/images/mysqlbackup2.png)
-对于NVMe机型实例，支持数据库回档到新实例和当前实例，支持库表级别回档：
+
+对于NVMe机型MySQL(快杰版)实例，支持数据库回档到新实例和当前实例，支持库表级别回档。
+
+数据库回档到原实例、具体库表：
+
 ![image](/images/backup15001.png)
 
+数据库回档到新实例、具体库表：
+
 ![image](/images/backup15002.png)
+
+数据库实例整体回档到新实例：
 
 ![image](/images/backup15003.png)
