@@ -1,5 +1,4 @@
 # FAQs
-
 ## 如何访问MySQL实例？
 
 **phpMyAdmin操作**
