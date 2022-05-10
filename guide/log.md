@@ -28,9 +28,9 @@ MySQL实例的日志包括二进制日志（BinLog）、慢查询日志（SlowLo
 
 清理日志操作仅适用于MySQL实例主库（Master）的二进制日志（BinLog）的清理。
 
-在详情页选择备份管理，在页面中选择Binlog，选择清理日志。
+在“详情”页选择“备份管理”，在左侧导航栏中选择“Binlog日志包”，点击“清理日志”。
 
-![image](/images/清理日志.png)
+![image](/images/cleanup-binlog.png)
 
 在清理日志弹窗页选择清理的时间，为了保证数据库同步安全，目前仅支持清理到当前时间前一天的日志。
 
