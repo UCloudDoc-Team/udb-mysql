@@ -158,9 +158,15 @@ MySQL实例支持安装插件和卸载插件的功能，目前仅开放handlerso
 ```
     uninstall plugin handlersocket;
 ```
-## 如何使用MySQL-Proxy使MySQL实例可以通过外网访问？
+## 如何使MySQL实例可以通过外网访问？
 
-鉴于MySQL实例不能通过外网IP直接访问，可使用MySQL-Proxy将MySQL实例跳转至云主机（UHost）的端口进行访问。
+### 推荐方式：使用公司的NAT网关产品实现端口转发
+
+详情请参考 https://docs.ucloud.cn/vpc/guide/natgw
+
+### 其它方式：使用 MySQL-Proxy 等代理产品实现端口转发
+
+以使用 CentOS7 云主机安装MySQL-Proxy为例
 
 在云主机（UHost）安装MySQL-Proxy：
 ```
