@@ -30,11 +30,6 @@
         * [查询中间件节点信息](/udb-mysql/rwrouter/manage/nodes)        
     * [功能优势](/udb-mysql/rwrouter/superiority)
     * [性能优势](/udb-mysql/rwrouter/performance)
-* CloudDBA
-    * [产品简介](/udb-mysql/clouddba/product)
-    * [产品优势](/udb-mysql/clouddba/superiority)
-    * [快速上手](/udb-mysql/clouddba/quick)
-    * [如何修改仪表盘](/udb-mysql/clouddba/guide)
 * [基准测试](/udb-mysql/test)
 * [产品价格](/udb-mysql/price)
 * [FAQs](/udb-mysql/faqs)
