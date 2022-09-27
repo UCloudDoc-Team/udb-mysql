@@ -30,6 +30,7 @@
         * [查询中间件节点信息](/udb-mysql/rwrouter/manage/nodes)        
     * [功能优势](/udb-mysql/rwrouter/superiority)
     * [性能优势](/udb-mysql/rwrouter/performance)
+* [数据库代理](/udb-mysql/udb-proxy/udb-proxy)
 * CloudDBA
     * [产品简介](/udb-mysql/clouddba/product)
     * [产品优势](/udb-mysql/clouddba/superiority)
