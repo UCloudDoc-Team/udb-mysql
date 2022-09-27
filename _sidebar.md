@@ -17,7 +17,7 @@
     * [MySQL日志管理](/udb-mysql/guide/log)
     * [Slave从库管理](/udb-mysql/guide/slave)
     * [监控告警](/udb-mysql/guide/monitor)
-* [读写分离](/udb-mysql/rwrouter/rwrouter)
+* [读写分离（旧版）](/udb-mysql/rwrouter/rwrouter)
     * [背景及方案](/udb-mysql/rwrouter/scheme)
     * [使用介绍](/udb-mysql/rwrouter/guide)
     * [功能原理](/udb-mysql/rwrouter/theory)
