@@ -96,3 +96,6 @@ c. 数据库实例整体回档到新实例：
 
 ![image](/images/backup15003.png)
 
+
+
+
