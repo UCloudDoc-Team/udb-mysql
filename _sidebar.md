@@ -11,6 +11,7 @@
     * [创建MySQL实例](/udb-mysql/quick/create)
     * [登录访问](/udb-mysql/quick/login)
 * 操作指南
+    * [安全组](/udb-mysql/guide/secgrp)
     * [实例管理](/udb-mysql/guide/instance)
     * [备份管理及恢复](/udb-mysql/guide/backup)
     * [配置文件管理](/udb-mysql/guide/config)
