@@ -33,7 +33,6 @@
         * [查询中间件节点信息](/udb-mysql/rwrouter/manage/nodes)
     * [功能优势](/udb-mysql/rwrouter/superiority)
     * [性能优势](/udb-mysql/rwrouter/performance)
-* [数据库代理](/udb-mysql/udb-proxy/udb-proxy)
 * [基准测试](/udb-mysql/test)
 * [产品价格](/udb-mysql/price)
 * [FAQs](/udb-mysql/faqs)
