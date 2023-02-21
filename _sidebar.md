@@ -8,7 +8,7 @@
     * [产品架构](/udb-mysql/product/architecture)
     * [与自建数据库对比](/udb-mysql/product/difference)
 * [产品价格](/udb-mysql/price)
-* * 快速上手
+* 快速上手
     * [创建MySQL实例](/udb-mysql/quick/create)
     * [登录访问](/udb-mysql/quick/login)
 * 操作指南
