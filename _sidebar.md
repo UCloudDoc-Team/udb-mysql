@@ -7,7 +7,8 @@
     * [机型版本](/udb-mysql/product/version)
     * [产品架构](/udb-mysql/product/architecture)
     * [与自建数据库对比](/udb-mysql/product/difference)
-* 快速上手
+* [产品价格](/udb-mysql/price)
+* * 快速上手
     * [创建MySQL实例](/udb-mysql/quick/create)
     * [登录访问](/udb-mysql/quick/login)
 * 操作指南
@@ -34,5 +35,4 @@
     * [性能优势](/udb-mysql/rwrouter/performance)
 
 * [基准测试](/udb-mysql/test)
-* [产品价格](/udb-mysql/price)
 * [FAQs](/udb-mysql/faqs)
