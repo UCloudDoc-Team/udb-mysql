@@ -21,8 +21,6 @@ SSD云盘机型的数据库实例，一般部署于未提供NVMe机型的可用�
 
 ### MySQL产品版本
 
-高可用/普通版NVMe机型MySQL，支持MySQL5.6/5.7/8.0和Percona5.6/5.7协议。
-
-高可用/普通版NVMe机型MySQL+Slave从库架构，支持MySQL5.6/5.7/8.0和Percona5.6/5.7协议。
+NVMe机型MySQL，支持MySQL5.6/5.7/8.0和Percona5.6/5.7协议。
 
 SSD云盘机型MySQL，支持MySQL5.7/8.0和Percona5.7协议。
