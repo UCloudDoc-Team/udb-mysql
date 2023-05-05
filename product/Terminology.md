@@ -13,16 +13,15 @@ MySQL实例包括普通版和高可用版实例类型。
 
 ## 版本
 
-MySQL实例目前支持MySQL5.5、MySQL5.6、MySQL5.7、Percona 5.5、Percona5.6和Percona 5.7等，用户可以根据需求选择相应的云数据库版本。
+MySQL实例目前支持MySQL5.5、MySQL5.6、MySQL5.7、MySQL8.0、Percona 5.5、Percona5.6和Percona 5.7等，用户可以根据需求选择相应的云数据库版本。
 
 ## 数据库机型
 
-MySQL实例目前提供NVMe机型和SSD机型。
+MySQL实例目前提供NVMe机型和SSD云盘机型。
 
-SSD机型适用于对数据库性能要求较高的业务场景，主从架构支持免费开启读写分离功能。
+NVMe机型可以很好的适用于各种业务场景，采用超高性能RDMA NVMe SSD云盘，支持大容量（32T）存储、性价比超高。
 
-NVMe机型适用于大容量高性能需求的业务场景，采用超高性能RDMA NVMe SSD云盘，支持大容量（32T）存储、性价比超高。
-
+SSD云盘机型部署于未提供NVMe机型的可用区，可较好的满足大部分业务场景。底层存储采用SSD云盘，可有效保证数据安全性。
 
 ## 内存
 

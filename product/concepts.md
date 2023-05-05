@@ -2,6 +2,6 @@
 
 云数据库UDB MySQL是基于成熟云计算技术的高可用、高性能的数据库服务，让您能够在几十秒内完成部署、设置、操作和扩展；提供双主热备架构、备份、数据回档、读写分离、监控、数据库审计等全套解决方案，大大简化了数据库运维工作，有利于您专注于应用程序研发及业务的发展。
 
-UDB MySQL完全兼容MySQL 5.5、MySQL 5.6、MySQL 5.7、Percona 5.5、Percona 5.6和Percona 5.7协议。
+UDB MySQL完全兼容MySQL 5.5、MySQL 5.6、MySQL 5.7、MySQL 8.0、Percona 5.5、Percona 5.6和Percona 5.7协议。
 
 
