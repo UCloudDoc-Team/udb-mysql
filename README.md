@@ -19,6 +19,7 @@
     * [MySQL日志管理](/udb-mysql/guide/log)
     * [Slave从库管理](/udb-mysql/guide/slave)
     * [监控告警](/udb-mysql/guide/monitor)
+    * [MySQL高可用](/udb-mysql/guide/ha)
 * [数据库代理](/udb-mysql/udb-proxy/udb-proxy)
 * [读写分离（即将下线）](/udb-mysql/rwrouter/rwrouter)
     * [背景及方案](/udb-mysql/rwrouter/scheme)
