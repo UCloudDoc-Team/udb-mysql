@@ -14,6 +14,10 @@
 
 ![image](/images/create0701.png)
 
+用户在选择大版本后，可在小版本列表选择对应小版本。
+
+![image](/images/create01.png)
+
 3.2）按需设置网络、实例名称、端口号，管理员用户名和管理员密码。MySQL默认端口号为3306，管理员用户名默认为root。为了数据安全，管理员密码需要一定的复杂度。
 
 ![image](/images/create01.png)
