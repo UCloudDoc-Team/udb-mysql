@@ -6,17 +6,20 @@
 
 2、创建页面中选择地域、可用区。
 
-![image](/images/mysql-v4-002.png)
+![image](/images/quick/createMySQLRegion2023.png)
 
 3、选择数据库配置
 
 3.1）按需选择实例类型（高可用版）、版本、数据库机型、内存、硬盘、高可用容灾方案。创建MySQL实例时会使用默认配置文件，若有特殊需要，用户可以上传自定义配置文件。
 
-![image](/images/create0701.png)
+![image](/images/quick/createMySQLConf.png)
 
-用户在选择大版本后，可在小版本列表选择对应小版本。
-
-![image](/images/小版本.png)
+- 用户在选择大版本后，可在小版本列表选择对应小版本。
+- 对于8.0版本，用户按需要配置“区分大小写”。 此配置项在实例创建后不可更改
+```
+ off 表示 lower_case_table_names=0，即表名不区分大小写
+ on  表示 lower_case_table_names=1，即表名区分大小写
+```
 
 3.2）按需设置网络、实例名称、端口号，管理员用户名和管理员密码。MySQL默认端口号为3306，管理员用户名默认为root。为了数据安全，管理员密码需要一定的复杂度。
 
@@ -24,15 +27,15 @@
 
 3.3）数据库计费，在右侧面板选择计费方式与计费周期，并点击“立即购买”。
 
-![image](/images/create02.png)
+![image](/images/quick/createMySQLBuy.png)
 
 4、最后确认各项选择以及金额，确认支付。
 
-![image](/images/mysql-v4-006.png)
+![image](/images/quick/createMySQLBuyConfirm.png)
 
 5、支付完成后，页面跳转回MySQL实例管理页，MySQL实例进行初始化，待初始化完成后即可使用；在MySQL实例管理页，列出了MySQL实例的全部信息，包括实例名称、属性、IP地址、实例类型、机型、版本、状态等。
 
-![image](/images/mysql-v4-007.png)
+![image](/images/quick/createMySQLList.png)
 
 6、选择某一个MySQL实例点击“详情”会显示MySQL实例详细信息，同时可以查看监控数据和进行常用操作。
 
