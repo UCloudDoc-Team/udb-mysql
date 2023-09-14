@@ -1,6 +1,6 @@
 # 创建MySQL实例
 
-1、在控制台选择云数据库UDB\>MySQL管理，点击“创建数据库”；或者在空白区域根据提示点击创建MySQL实例。
+1、在控制台选择"云数据库 MySQL UDB"\>"MySQL管理"，点击“创建数据库”；或者在空白区域根据提示点击创建MySQL实例。
 
 ![image](/images/mysql-v4-001.png)
 
