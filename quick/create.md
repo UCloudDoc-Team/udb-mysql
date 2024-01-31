@@ -12,7 +12,7 @@
 
 3.1）按需选择实例类型（高可用版）、版本、数据库机型、内存、硬盘、高可用容灾方案。创建MySQL实例时会使用默认配置文件，若有特殊需要，用户可以上传自定义配置文件。
 
-可选cpu机型
+可选CPU机型
 ![image](/images/quick/createMySQLConf2024.png)
 内存机型
 ![image](/images/quick/createMySQLConf2023.png)
