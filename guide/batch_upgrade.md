@@ -6,15 +6,15 @@ MySQL云数据库支持批量升降级实例。
 ## 操作步骤
 
 控制台选择实例后，在批量操作中选择批量升降级功能
-![image](/images/批量01.png)
+![image](/images/批量1.png)
 
 在选择好对应的容量和规格后，升降级预检查会计算出实例升降级到对应配置所需要的价格
-![image](/images/批量02.png)
+![image](/images/批量2.png)
 
 在完成预检查后，后台会计算出此次批量升降级需要退/补的总金额，在确认无误后可以点击下方开始升降级
-![image](/images/批量03.png)
+![image](/images/批量3.png)
 
-![image](/images/批量04.png)
+![image](/images/批量4.png)
 
 批量升降级任务也可在任务中心查看
-![image](/images/批量05.png)
+![image](/images/批量5.png)
