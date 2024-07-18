@@ -8,6 +8,7 @@
     * [产品架构](/udb-mysql/product/architecture)
     * [与自建数据库对比](/udb-mysql/product/difference)
 * [产品价格](/udb-mysql/price)
+* [产品价格(旧版)](/udb-mysql/price_old)
 * 快速上手
     * [创建MySQL实例](/udb-mysql/quick/create)
     * [登录访问](/udb-mysql/quick/login)
@@ -22,6 +23,7 @@
     * [MySQL高可用](/udb-mysql/guide/ha)
     * [版本升级](/udb-mysql/guide/version)
     * [SSL](/udb-mysql/guide/ssl)
+    * [批量升降级](/udb-mysql/guide/batch_upgrade)
 * [数据库代理](/udb-mysql/udb-proxy/udb-proxy)
 * [读写分离（即将下线）](/udb-mysql/rwrouter/rwrouter)
     * [背景及方案](/udb-mysql/rwrouter/scheme)
