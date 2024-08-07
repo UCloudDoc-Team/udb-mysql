@@ -15,13 +15,19 @@
 * 操作指南
     * [安全组](/udb-mysql/guide/secgrp)
     * [实例管理](/udb-mysql/guide/instance)
-    * [备份管理及恢复](/udb-mysql/guide/backup)
+    * 备份管理及恢复
+        * [备份管理](/udb-mysql/guide/backup)
+        * [备份恢复](/udb-mysql/guide/recovery)
+        * [跨地域备份管理及恢复](/udb-mysql/guide/cross_backup)
+        * [方舟快照备份](/udb-mysql/guide/ark_snapshot_backup)
     * [配置文件管理](/udb-mysql/guide/config)
     * [MySQL日志管理](/udb-mysql/guide/log)
     * [只读从库管理](/udb-mysql/guide/slave)
     * [监控告警](/udb-mysql/guide/monitor)
     * [MySQL高可用](/udb-mysql/guide/ha)
-    * [版本升级](/udb-mysql/guide/version)
+    * 版本升级
+        * [小版本升级](/udb-mysql/guide/version)
+        * [大版本升级](/udb-mysql/guide/upgrade_major_version)
     * [SSL](/udb-mysql/guide/ssl)
     * [批量升降级](/udb-mysql/guide/batch_upgrade)
 * [数据库代理](/udb-mysql/udb-proxy/udb-proxy)
