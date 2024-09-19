@@ -16,7 +16,7 @@
     * [安全组](/udb-mysql/guide/secgrp)
     * [实例管理](/udb-mysql/guide/instance)
     * 备份与恢复
-        * [管理](/udb-mysql/guide/backup)
+        * [备份](/udb-mysql/guide/backup)
         * [恢复](/udb-mysql/guide/recovery)
         * [跨地域备份管理及恢复](/udb-mysql/guide/cross_backup)
         * [快照备份](/udb-mysql/guide/ark_snapshot_backup)
