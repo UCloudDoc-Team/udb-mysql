@@ -26,7 +26,7 @@
     * [监控告警](/udb-mysql/guide/monitor)
     * [MySQL高可用](/udb-mysql/guide/ha)
     * 版本升级
-        * [小版本升级](/udb-mysql/guide/version)
+        * [小版本升级](/udb-mysql/guide/upgrade_kernel_version)
         * [大版本升级](/udb-mysql/guide/upgrade_major_version)
     * [SSL](/udb-mysql/guide/ssl)
     * [批量升降级](/udb-mysql/guide/batch_upgrade.md)
