@@ -6,20 +6,21 @@
 开启跨地域备份之前，会先获取实例可以进行跨地域备份的目标地域， 用户可以开启跨地域备份功能，并设置需要备份的目标地域和保留天数(7~5年)。
 实例进行自动备份或者手动备份完成后， 跨地域备份逻辑会被触发， 将已经备份完成的文件备份到用户设置的目标地域， 目标地域中超过用户设置的保留时间的备份文件会被删除。
 
-![image](/images/backup202001.png)
+![image](/images/enable_cross_backup_1.png)
+![image](/images/enable_cross_backup_2.png)
 
 ## 关闭跨地域备份
 用户在开启实例跨地域备份功能后， 可以选择关闭跨地域备份功能， 需注意关闭跨地域备份功能不会删除已经备份的文件， 已经备份的文件会继续按照保留策略进行管理， 如用户不再需要备份文件， 可以先更改保留时间后， 再关闭跨地域备份功能。 删除实例目标地域的备份文件不会进行删除，扔按照保留天数进行保存，同时产生存储空间费用。
-![image](/images/backup202001.png)
+![image](/images/disable_cross_backup.png)
 
 ## 查看跨地域已备份文件
 在实例自动备份或者手动备份完成后， 跨地域备份逻辑触发， 用户可以在实例的跨地域备份列表页以及目标地域的跨地域备份列表页查看相关的备份文件。
-![image](/images/backup202001.png)
-![image](/images/backup202001.png)
+![image](/images/describe_cross_backup_instance.png)
+![image](/images/describe_cross_backup.png)
 
 ## 下载跨地域已备份文件
 在目标地域， 如北京的实例设置跨地域备份到上海， 可以在上海的跨地域备份列表页查看已经备份的文件。 点击下载按钮后， 会返回文件的公网下载地址和内网下载地址。
-![image](/images/backup202001.png)
+![image](/images/describe_cross_backup.png)
 
 ## 从跨地域备份文件创建实例
 在目标地域， 如北京的实例设置跨地域备份到上海， 可以在上海的跨地域备份列表页查看已经备份的文件。 点击从备份创建， 可以从备份创建一个新的实例， 需注意
@@ -27,7 +28,7 @@
 2. 创建的实例除了使用原实例数据文件，和原实例没有其他联系
 
 
-![image](/images/backup202001.png)
+![image](/images/describe_cross_backup.png)
 
 ## 计费
 跨地域备份功能将产生如下费用:
