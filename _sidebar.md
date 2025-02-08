@@ -20,6 +20,7 @@
         * [恢复](/udb-mysql/guide/recovery)
         * [跨地域备份管理及恢复](/udb-mysql/guide/cross_backup)
         * [快照备份](/udb-mysql/guide/ark_snapshot_backup)
+        * [从US3恢复](/udb-mysql/guide/us3_recovery)
     * [配置文件管理](/udb-mysql/guide/config)
     * [MySQL日志管理](/udb-mysql/guide/log)
     * [只读从库管理](/udb-mysql/guide/slave)
