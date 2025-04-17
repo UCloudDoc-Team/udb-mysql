@@ -6,6 +6,7 @@
     * [产品优势](/udb-mysql/product/superiority)
     * [机型版本](/udb-mysql/product/version)
     * [产品架构](/udb-mysql/product/architecture)
+    * [产品选型](/udb-mysql/product/specification_class)
     * [与自建数据库对比](/udb-mysql/product/difference)
 * [产品价格](/udb-mysql/price)
 * [产品价格(旧版)](/udb-mysql/price_old)
