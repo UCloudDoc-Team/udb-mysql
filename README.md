@@ -25,6 +25,7 @@
     * [配置文件管理](/udb-mysql/guide/config)
     * [MySQL日志管理](/udb-mysql/guide/log)
     * [只读从库管理](/udb-mysql/guide/slave)
+    * [只读组管理](/udb-mysql/guide/rogroup)
     * [监控告警](/udb-mysql/guide/monitor)
     * [MySQL高可用](/udb-mysql/guide/ha)
     * 版本升级
