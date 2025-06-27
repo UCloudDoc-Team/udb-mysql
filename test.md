@@ -2,12 +2,9 @@
 
 基准测试（benchmark）是针对系统设计的一种压力测试，目标是为了掌握系统的行为。
 sysbench作为一款优秀的MySQL基准测试工具为业界所认可。
-本文应用sysbench在不同并发线程、测试持续时间15分钟的条件下，对MySQL九种不同配置机型，五种不同数据量场景，进行了测试，得出了QPS和TPS数据。
+本文应用sysbench在不同并发线程、测试持续时间15分钟的条件下，对MySQL多种不同配置机型、多种不同数据量场景进行了测试，得出了QPS和TPS数据。
 
-## 测试环境
-压测机器配置：32C64G，200G系统盘
 
-sysbench版本：sysbench 1.0.17 (using system LuaJIT 2.0.4)
 
 ## 操作步骤
 ```plain
@@ -21,7 +18,7 @@ sysbench /usr/share/sysbench/oltp_read_write.lua --tables= --table-size= --m
 
 ## 测试结果
 
-## NVMe 型
+### NVMe 型
 
 ![image](/images/qps_tps.png)
 
