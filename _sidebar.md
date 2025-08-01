@@ -23,6 +23,7 @@
         * [快照备份](/udb-mysql/guide/ark_snapshot_backup)
         * [从US3恢复](/udb-mysql/guide/us3_recovery)
     * [配置文件管理](/udb-mysql/guide/config)
+    * [配置文件管理(旧版)](/udb-mysql/guide/config_old)
     * [MySQL日志管理](/udb-mysql/guide/log)
     * [只读从库管理](/udb-mysql/guide/slave)
     * [只读组管理](/udb-mysql/guide/rogroup)
