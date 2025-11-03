@@ -24,6 +24,7 @@
     * [版本升级](/udb-mysql/guide/version)
     * [SSL](/udb-mysql/guide/ssl)
     * [批量升降级](/udb-mysql/guide/batch_upgrade.md)
+    * [外网访问](/udb-mysql/guide/external)
 * [数据库代理](/udb-mysql/udb-proxy/udb-proxy)
 * [读写分离（即将下线）](/udb-mysql/rwrouter/rwrouter)
     * [背景及方案](/udb-mysql/rwrouter/scheme)
