@@ -164,7 +164,6 @@ mysql -h udbha-xxxxx.mysql.cn-bj2.internet.ucloudcs.com -P 55945 -u root -p
 | 东京    |30|
 
 备注：
-
+付费方式与周期与实例保持一致
 按年付费：1年费用=10×月单价（按10个月计算）
-
 按时付费：1小时费用=1.5倍 ×(月单价÷30天÷24小时）
