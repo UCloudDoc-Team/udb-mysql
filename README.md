@@ -36,6 +36,10 @@
     * [外网访问](/udb-mysql/guide/external)
     * [手动主备切换](/udb-mysql/guide/manual_failover)
 * [数据库代理](/udb-mysql/udb-proxy/udb-proxy)
+* API 参考
+    * [API 列表](/udb-mysql/api/api_reference)
+    * [常量与约束](/udb-mysql/api/constants)
+    * [常用操作流程](/udb-mysql/api/workflows)
 * [基准测试](/udb-mysql/test)
 * [FAQs](/udb-mysql/faqs)
   
